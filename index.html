@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Самостійна робота №1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="ср1/book.ico">
+
+
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7 url("ср1/bg.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #222;
+    }
+
+    header {
+      background: #4b1f1f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 { margin: 0; font-size: 28px; }
+
+    main {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #793636;
+      margin-top: 30px;
+      border-left: 6px solid #4b1f1f;
+      padding-left: 10px;
+    }
+
+    h3 { color: #4b1f1f; margin-top: 20px; }
+
+    p, li { font-size: 16px; line-height: 1.6; }
+    ul, ol { margin: 10px 0 20px 25px; }
+
+    a { color: #4b1f1f; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th { background: #e6e6e6; }
+
+    pre {
+      background: #f4f4f9;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    form {
+      margin-top: 12px;
+      display: grid;
+      gap: 12px;
+      max-width: 500px;
+    }
+    label { font-weight: bold; }
+    input, select, textarea, button {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      background: #793636;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: #4b1f1f; }
+
+    img {
+      max-width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 10px 0;
+    }
+
+    footer {
+      margin: 30px auto;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="top">САМОСТІЙНА РОБОТА №1</h1>
+    <p>ІC-42-inden1-Lisova-Alina-web</p>
+  </header>
+
+  <main>
+    <h2>До теми</h2>
+    <p>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ. РОБОТА З ПОСИЛАННЯМИ, 
+    ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ.</p>
+
+    <h2>Мета</h2>
+    <p>Придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками та формами.</p>
+
+    <h2>Хід виконання роботи</h2>
+    <ol>
+      <li>Створити репозиторій <code>ІC-42-inden1-Lisova-Alina-web</code>.</li>
+      <li>Посилання на живу сторінку розмістити в Classroom.</li>
+      <li>Закріпити теорію та відпрацювати приклади.</li>
+    </ol>
+
+    <h2>Приклади</h2>
+
+    <h2>1. Заголовки різних рівнів</h2>
+    <h1>H1 — Назва магазину</h1>
+    <h2>H2 — Каталог книжок</h2>
+    <h3>H3 — Детективи</h3>
+    <h4>H4 — Агата Крісті</h4>
+    <h5>H5 — Книга</h5>
+    <h6>H6 — Дрібний текст</h6>
+
+    <h2>2. Зображення</h2>
+    <p>Приклад обкладинок:</p>
+    <img src="ср1/nile.jpg" alt="Смерть на Нілі">
+    <img src="ср1/dorian.jpg" alt="Портрет Доріана Грея">
+
+    <h3>Елемент picture</h3>
+    <picture>
+      <source srcset="ср1/small.jpg" media="(max-width:600px)">
+      <source srcset="ср1/large.jpg" media="(min-width:601px)">
+      <img src="ср1/large.jpg" alt="Адаптивне зображення">
+    </picture>
+<h3>Карта зображення (Image map)</h3>
+    <p>Натисніть на зображення:</p>
+    <img src="ср1/map-example.jpg" alt="Image map" usemap="#bookmap">
+    <map name="bookmap">
+      <area shape="rect" coords="0,0,100,150" alt="Book1" href="https://wikipedia.org/wiki/Book">
+      <area shape="rect" coords="120,0,220,150" alt="Book2" href="https://google.com">
+    </map>
+    <h2>4. Посилання</h2>
+    <p><a href="https://w3schoolsua.github.io/html/html_links.html" target="_blank">Посилання на W3Schools</a></p>
+    <p><a href="#top">Перейти нагору (закладка)</a></p>
+   <h3>Посилання різних кольорів</h3>
+    <style>
+      .links a:link { color: blue; }
+      .links a:visited { color: purple; }
+      .links a:hover { color: green; }
+      .links a:active { color: red; }
+    </style>
+    <div class="links">
+      <p><a href="https://google.com" target="_blank">Google</a></p>
+      <p><a href="https://github.com" target="_blank">GitHub</a></p>
+    </div>
+
+    <h3>Посилання-кнопка</h3>
+    <a href="index.html" style="
+      display:inline-block;
+      padding:10px 20px;
+      background:#793636;
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:bold;">На головну</a>
+
+  <h2>5. Таблиці</h2>
+
+
+
+<table style="width:90%; border:2px solid #4b1f1f; border-collapse:collapse; margin:auto; text-align:center;">
+  <caption style="caption-side:top; font-weight:bold; padding:10px;">Каталог книжок</caption>
+  
+  <!-- Група стовпців -->
+  <colgroup>
+    <col span="1" style="background-color:#ffe6e6"> <!-- Назва -->
+    <col span="1" style="background-color:#e6ffe6"> <!-- Автор -->
+    <col span="1" style="background-color:#e6e6ff"> <!-- Жанр -->
+    <col span="1" style="background-color:#fff0cc"> <!-- Рік -->
+    <col span="1" style="background-color:#f0e6ff"> <!-- Ціна -->
+  </colgroup>
+  
+  <!-- Заголовок -->
+  <tr style="background:#793636; color:#fff;">
+    <th>Назва</th>
+    <th>Автор</th>
+    <th>Жанр</th>
+    <th>Рік</th>
+    <th>Ціна</th>
+  </tr>
+  
+   
+  <!-- Дані -->
+  <tr>
+    <td>Тарас Бульба</td>
+    <td>М. Гоголь</td>
+    <td>Класика</td>
+    <td>1835</td>
+    <td>200 грн</td>
+  </tr>
+  
+  <!-- Rowspan -->
+  <tr>
+    <td rowspan="2">Пригоди Шерлока Холмса Том 1/Том 2</td>
+    <td rowspan="2">А. Конан-Дойл</td>
+    <td>Детектив</td>
+    <td>1892</td>
+    <td>400 грн</td>
+  </tr>
+  <tr>
+    <td>Детектив</td>
+    <td>1893</td>
+    <td>420 грн</td>
+  </tr>
+  
+  <!-- Стилізація -->
+  <tr style="background:#f0f0f0;">
+    <td>451° за Фаренгейтом</td>
+    <td>Рей Бредбері</td>
+    <td>Фантастика</td>
+    <td>1953</td>
+    <td>280 грн</td>
+  </tr>
+  
+</table>
+
+
+    <h2>6. Списки</h2>
+    <p>Невпорядкований:</p>
+    <ul>
+      <li>Детектив</li>
+      <li>Фантастика</li>
+      <li>Роман</li>
+    </ul>
+
+    <p>Впорядкований:</p>
+    <ol>
+      <li>Агата Крісті</li>
+      <li>Еріх Ремарк</li>
+      <li>Оскар Уайльд</li>
+    </ol>
+
+    <p>Описовий список:</p>
+    <dl>
+      <dt>HTML</dt><dd>Мова розмітки</dd>
+      <dt>CSS</dt><dd>Мова стилів</dd>
+    </dl>
+
+    <h2>7. Форми</h2>
+    <form>
+      <label for="name">Ваше ім’я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="book">Оберіть книгу:</label>
+      <select id="book" name="book">
+        <option>Смерть на Нілі</option>
+        <option>Портрет Доріана Грея</option>
+      </select>
+
+      <label for="comment">Коментар:</label>
+      <textarea id="comment" name="comment"></textarea>
+
+      <label>
+        <input type="checkbox" name="subscribe"> Підписатися на новини
+      </label>
+
+      <button type="submit">Надіслати</button>
+    </form>
+            
+       <h3>8. Додаткові input-и у формі</h3>
+    <form>
+      <label>Пароль:</label>
+      <input type="password" name="pass"><br>
+
+      <label>Дата:</label>
+      <input type="date" name="date"><br>
+
+      <label>Завантажити файл:</label>
+      <input type="file" name="file"><br>
+
+      <label>Виберіть рівень ціни:</label>
+      <input type="range" min="100" max="500" step="50"><br>
+
+      <label>Обрати жанр:</label><br>
+      <input type="radio" name="genre" value="romance"> Роман<br>
+      <input type="radio" name="genre" value="detective"> Детектив<br>
+    </form>
+
+    <h3>9. HTML5 елементи</h3>
+    <section>
+      <h4>Новини магазину</h4>
+      <article>
+        <h5>Акція тижня</h5>
+        <p>Знижка -20% на всі детективи.</p>
+      </article>
+      <aside>
+        <p><strong>Порада:</strong> Обирайте книги завчасно — кількість обмежена!</p>
+      </aside>
+    </section>
+
+
+    <h2>Висновки</h2>
+    <p>У результаті виконання роботи ми застосували всі приклади HTML: заголовки, посилання (в т.ч. закладки і кольори), зображення (фон, picture, favicon), таблиці з різними властивостями, списки (UL, OL, DL), форми з різними елементами.  
+    На прикладі предметної галузі «онлайн-магазин книжок» ми відпрацювали створення повноцінної HTML-сторінки.</p>
+  </main>
+
+  <footer>
+    <p>IC-42_INDEPENDENT-LisovaAlina-FIOT-2025 — Самостійна робота №1</p>
+  </footer>
+</body>
+</html>
